@@ -1,7 +1,7 @@
 {
   "name": "proyecto-final-bmq-2-leandro-borda",
   "version": "1.0.0",
-  "description": "proyecto final bmq 2",
+  "description": "proyecto final bmq 2}",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

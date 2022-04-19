@@ -1,3 +1,5 @@
+/* header */
+
 $colorPrimario: rgb(97, 97, 148);
 
 header {
@@ -28,7 +30,7 @@ header {
 }
 
 ul {
-    display: flex;
+    display: none;
     justify-content: center;
     align-content: center;
     padding: 50px;
@@ -59,4 +61,12 @@ header .barraNavegacion {
         box-shadow: 0 2px  violet;
         transition: 0.3s;
     }
+}
+
+.btn-group {
+    margin: 2px;
+    &:hover {
+        transform: scale(1.1);
+    }
+    
 }
