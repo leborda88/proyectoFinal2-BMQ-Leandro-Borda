@@ -72,10 +72,18 @@ header .barraNavegacion {
       transform: scale(1.4);
       transition: 0.7s; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
 /* contenedor main de index */
 .contenedorMain {
-  width: 100%;
-  height: 100%;
   padding: 1rem; }
   .contenedorMain .contenedor-1 {
     margin-bottom: 20px;
@@ -129,3 +137,32 @@ header .barraNavegacion {
     .mainCiudadgaucha .contenedor-3 .mapa {
       width: 100%;
       padding: 10px; }
+
+/* media queries */
+@media screen and (min-width: 768px) {
+  .contenedor-1 {
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (min-width: 768px) {
+  .contenedor-2 {
+    display: flex;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 30px; }
+    .contenedor-2 .botones {
+      border: 1px solid white;
+      background-color: #51a5a5;
+      border-radius: 20px;
+      margin: 10px;
+      padding: 10px; } }
+
+@media screen and (min-width: 768px) {
+  ul {
+    display: flex; }
+  .btn-group {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .contenedor-1 {
+    display: block; } }

@@ -1,0 +1,42 @@
+/* media queries */
+
+@media screen and (min-width:768px) {
+
+    .contenedor-1 {
+        display: flex;
+        justify-content: center;
+      
+    }
+}
+
+@media screen and (min-width:768px) {
+.contenedor-2 {
+        display: flex;
+        padding: 20px;
+        margin: 0px;
+        border-radius: 30px;
+        .botones {
+            border: 1px solid white;
+            background-color: rgb(81, 165, 165);
+            border-radius: 20px;
+            margin: 10px;
+            padding: 10px;
+        }
+    } 
+}
+
+@media screen and (min-width:768px) {
+    ul {
+        display: flex;
+    }
+    .btn-group {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .contenedor-1 {
+        display: block;
+
+    }
+}
