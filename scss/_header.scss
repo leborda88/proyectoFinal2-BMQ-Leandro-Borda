@@ -1,12 +1,12 @@
 /* header */
 
-$colorPrimario: rgb(97, 97, 148);
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    background-color: rgb(97, 97, 148);
+    background-color: $colorPrimario;
     top: 0;
     left: 0;
     width: 100%;
@@ -62,9 +62,5 @@ header .barraNavegacion {
 }
 
 .btn-group {
-    margin: 2px;
-    &:hover {
-        transform: scale(1.1);
-    }
-    
+    margin: 2px; 
 }

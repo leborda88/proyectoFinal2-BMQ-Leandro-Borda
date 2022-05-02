@@ -1,4 +1,10 @@
-$colorPrimario: rgb(97, 97, 148);
+@import "general";
+
+@import "variables";
+
+@import "extend";
+
+@import "mixin";
 
 @import "header";
 
@@ -6,4 +12,4 @@ $colorPrimario: rgb(97, 97, 148);
 
 @import "main";
 
-@import "mediaqueries"
+@import "mediaqueries";

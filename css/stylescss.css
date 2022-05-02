@@ -1,9 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif'; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+/* extend */
+.contenedorMain, .mainCiudadgaucha, .mainQuilmesCultura, .mainContactos, .mainGaleria {
+  margin-bottom: 20px;
+  padding: 10px;
+  margin: 10px;
+  color: #404049;
+  box-shadow: 0 0 20px #58587e;
+  border-radius: 10px; }
+
+/* mixin */
 /* header */
 header {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background-color: #616194;
+  background-color: #58587e;
   top: 0;
   left: 0;
   width: 100%;
@@ -33,7 +53,7 @@ ul {
       padding: 5px;
       text-decoration: none; }
       ul li a:hover {
-        color: #616194;
+        color: #58587e;
         background-color: aliceblue;
         transform: scale(1.1);
         border-radius: 10px;
@@ -50,8 +70,6 @@ header .barraNavegacion {
 
 .btn-group {
   margin: 2px; }
-  .btn-group:hover {
-    transform: scale(1.1); }
 
 /* footer */
 .footer {
@@ -72,30 +90,14 @@ header .barraNavegacion {
       transform: scale(1.4);
       transition: 0.7s; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-body {
-  width: 100%;
-  height: 100%; }
-
 /* contenedor main de index */
-.contenedorMain {
+.contenedorMain, .mainCiudadgaucha, .mainQuilmesCultura, .mainContactos, .mainGaleria {
   padding: 1rem; }
-  .contenedorMain .contenedor-1 {
-    margin-bottom: 20px;
-    padding: 10px;
-    color: #404049;
-    box-shadow: 0 0 20px #58587e;
-    border-radius: 10px; }
-    .contenedorMain .contenedor-1 .imgPrincipal {
-      width: 100%;
-      padding: 10px; }
-      .contenedorMain .contenedor-1 .imgPrincipal img {
-        width: 100%; }
+  .contenedorMain .imgPrincipal, .mainCiudadgaucha .imgPrincipal, .mainQuilmesCultura .imgPrincipal, .mainContactos .imgPrincipal, .mainGaleria .imgPrincipal {
+    width: 100%;
+    padding: 10px; }
+    .contenedorMain .imgPrincipal img, .mainCiudadgaucha .imgPrincipal img, .mainQuilmesCultura .imgPrincipal img, .mainContactos .imgPrincipal img, .mainGaleria .imgPrincipal img {
+      width: 100%; }
 
 /* section 2 */
 .contenedor-2 {
@@ -110,7 +112,7 @@ body {
   .contenedor-2 .botones {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 100%;
     margin: 0px;
     padding: 5px;
@@ -125,18 +127,49 @@ body {
 
 /* main quilmes ciudad gaucha */
 .mainCiudadgaucha {
-  width: 100%;
-  height: 100%;
   padding: 1rem; }
-  .mainCiudadgaucha .contenedor-3 {
-    margin-bottom: 20px;
-    padding: 10px;
-    color: #404049;
-    box-shadow: 0 0 20px #58587e;
-    border-radius: 10px; }
-    .mainCiudadgaucha .contenedor-3 .mapa {
-      width: 100%;
-      padding: 10px; }
+  .mainCiudadgaucha .mapa {
+    width: 100%;
+    padding: 10px; }
+
+/* main Quilmes cultura */
+.mainQuilmesCultura {
+  padding: 1rem; }
+  .mainQuilmesCultura .img {
+    margin: 5px;
+    display: flex;
+    justify-content: center; }
+    .mainQuilmesCultura .img img {
+      padding: 10px;
+      width: 30%; }
+
+/* main Contactos */
+.mainContactos {
+  padding: 1rem; }
+  .mainContactos .contactos {
+    min-height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    .mainContactos .contactos h2 {
+      text-align: center;
+      margin-bottom: 10px; }
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .botones .boton {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase; }
+
+/* main galeria */
+.mainGaleria {
+  padding: 1rem; }
+  .mainGaleria img {
+    width: 100%; }
 
 /* media queries */
 @media screen and (min-width: 768px) {
