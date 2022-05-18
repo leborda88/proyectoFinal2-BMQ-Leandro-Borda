@@ -6,13 +6,18 @@
 
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-color: grey; }
 
 /* extend */
 .contenedorMain, .mainCiudadgaucha, .mainQuilmesCultura, .mainContactos, .mainGaleria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 20px;
   padding: 10px;
-  margin: 10px;
+  margin: 50px;
+  background-color: #fae8e8;
   color: #404049;
   box-shadow: 0 0 20px #58587e;
   border-radius: 10px; }
@@ -95,20 +100,48 @@ header .barraNavegacion {
   padding: 1rem; }
   .contenedorMain .imgPrincipal, .mainCiudadgaucha .imgPrincipal, .mainQuilmesCultura .imgPrincipal, .mainContactos .imgPrincipal, .mainGaleria .imgPrincipal {
     width: 100%;
-    padding: 10px; }
+    padding: 5px; }
     .contenedorMain .imgPrincipal img, .mainCiudadgaucha .imgPrincipal img, .mainQuilmesCultura .imgPrincipal img, .mainContactos .imgPrincipal img, .mainGaleria .imgPrincipal img {
       width: 100%; }
+
+/* contenedor 1 */
+.contenedor-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  height: auto;
+  display: flex;
+  padding: 20px; }
+
+/* contenedor 15 */
+.contenedor-15 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  height: auto;
+  display: flex;
+  padding: 20px; }
+  .contenedor-15 .carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; }
 
 /* section 2 */
 .contenedor-2 {
   display: grid;
   justify-content: center;
-  background-color: #51a5a5;
+  background-color: #c2dada;
   box-shadow: 0 0 15px #58587e;
   border-radius: 10px;
-  width: 100%;
+  width: auto;
   padding: 0;
-  margin: 0; }
+  margin: 30px; }
   .contenedor-2 .botones {
     display: flex;
     justify-content: center;
@@ -118,12 +151,62 @@ header .barraNavegacion {
     padding: 5px;
     text-decoration: none; }
     .contenedor-2 .botones a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
       .contenedor-2 .botones a:hover {
         text-decoration: none;
         color: white;
         transform: scale(1.4);
         transition: 0.7s; }
+
+/* contenedor 3 */
+.contenedor-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 40px; }
+  .contenedor-3 .mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.contenedor-35 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
+  width: 60%; }
+
+/* contenedor 4 */
+.contenedor-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 40px; }
+  .contenedor-4 .textoCultura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    width: 60%; }
+
+.contenedor-45 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-content: center;
+  padding: 40px; }
+  .contenedor-45 .incaa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    width: 50%; }
 
 /* main quilmes ciudad gaucha */
 .mainCiudadgaucha {
@@ -151,9 +234,17 @@ header .barraNavegacion {
     display: grid;
     justify-content: center;
     align-items: center; }
+    .mainContactos .contactos input {
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 10px; }
     .mainContactos .contactos h2 {
       text-align: center;
       margin-bottom: 10px; }
+    .mainContactos .contactos textarea {
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 10px; }
 
 .botones {
   display: flex;
@@ -175,7 +266,40 @@ header .barraNavegacion {
 @media screen and (min-width: 768px) {
   .contenedor-1 {
     display: flex;
-    justify-content: center; } }
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 20px;
+    padding: 40px; }
+    .contenedor-1 .imgPrincipal {
+      width: 50%; }
+      .contenedor-1 .imgPrincipal img {
+        width: 100%; } }
+
+@media screen and (min-width: 768px) {
+  .textoPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    padding: 30px; } }
+
+@media screen and (min-width: 768px) {
+  .contenedor-15 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px;
+    padding: 20px; }
+    .contenedor-15 .desdelastablas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 50%;
+      padding: 30px; } }
 
 @media screen and (min-width: 768px) {
   .contenedor-2 {
@@ -195,7 +319,3 @@ header .barraNavegacion {
     display: flex; }
   .btn-group {
     display: none; } }
-
-@media screen and (min-width: 768px) {
-  .contenedor-1 {
-    display: block; } }

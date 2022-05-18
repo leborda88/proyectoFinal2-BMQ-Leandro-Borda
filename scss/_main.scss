@@ -8,25 +8,56 @@
     @extend .contenedorMain; 
         .imgPrincipal {
             width: 100%;
-            padding: 10px;
+            padding: 5px;
             img {
                 width: 100%;
             }
         }
     }
 
+    /* contenedor 1 */
+.contenedor-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 20px;
+} 
+
+/* contenedor 15 */
+
+.contenedor-15 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+} 
 
 /* section 2 */
 
 .contenedor-2 {
     display: grid;
     justify-content: center;
-    background-color: rgb(81, 165, 165);
+    background-color: rgb(194, 218, 218);
     box-shadow: 0 0 15px $colorPrimario;
     border-radius: 10px;
-    width: 100%;
+    width: auto;
     padding: 0;
-    margin: 0;
+    margin: 30px;
     .botones {
         @include centrarCaja;
         width: 100%;
@@ -35,6 +66,7 @@
         text-decoration: none;
         a {
             text-decoration: none;
+            color: white;
             &:hover {
             text-decoration: none;
             color:white;
@@ -45,6 +77,64 @@
     }
 }
 
+/* contenedor 3 */
+
+.contenedor-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+    .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contenedor-35 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+    width: 60%;
+
+}
+
+/* contenedor 4 */
+
+.contenedor-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+    .textoCultura {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+        width: 60%;
+    }
+}
+
+.contenedor-45 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+    .incaa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+        width: 50%;
+    }
+}
 /* main quilmes ciudad gaucha */
 
 .mainCiudadgaucha {
@@ -84,9 +174,19 @@
             display: grid;
             justify-content: center;
             align-items: center;
+            input {
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 10px;
+            }
             h2 {
                 text-align: center;
                 margin-bottom: 10px;
+            }
+            textarea {
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 10px;
             }
         }
     }
