@@ -14,6 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: auto;
   margin-bottom: 20px;
   padding: 10px;
   margin: 50px;
@@ -124,22 +126,24 @@ header .barraNavegacion {
   width: auto;
   height: auto;
   display: flex;
-  padding: 20px; }
-  .contenedor-15 .carousel {
+  padding: 20px;
+  width: 100%; }
+  .contenedor-15 .desdelastablas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px; }
+    padding: 20px;
+    width: 100%; }
 
 /* section 2 */
 .contenedor-2 {
   display: grid;
   justify-content: center;
-  background-color: #c2dada;
+  background-color: #5f9797;
   box-shadow: 0 0 15px #58587e;
   border-radius: 10px;
-  width: auto;
+  width: 100%;
   padding: 0;
   margin: 30px; }
   .contenedor-2 .botones {
@@ -175,14 +179,13 @@ header .barraNavegacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  padding: 50px;
-  width: 60%; }
+  align-items: center;
+  padding: 40px; }
 
 /* contenedor 4 */
 .contenedor-4 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   padding: 40px; }
@@ -192,11 +195,11 @@ header .barraNavegacion {
     justify-content: center;
     align-content: center;
     padding: 20px;
-    width: 60%; }
+    width: 100%; }
 
 .contenedor-45 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   padding: 40px; }
@@ -206,7 +209,24 @@ header .barraNavegacion {
     justify-content: center;
     align-content: center;
     padding: 20px;
-    width: 50%; }
+    width: 100%; }
+
+/* contenedor 6 */
+.contenedor-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 40px; }
+
+.contenedor-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 40px; }
+  .contenedor-7 img {
+    margin-bottom: 20px; }
 
 /* main quilmes ciudad gaucha */
 .mainCiudadgaucha {
@@ -319,3 +339,54 @@ header .barraNavegacion {
     display: flex; }
   .btn-group {
     display: none; } }
+
+@media screen and (min-width: 768px) {
+  .contenedor-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 40px; }
+    .contenedor-3 .mapa {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+@media screen and (min-width: 768px) {
+  .contenedor-35 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    width: auto; } }
+
+@media screen and (min-width: 768px) {
+  .contenedor-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 40px; }
+    .contenedor-4 .textoCultura {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      padding: 30px;
+      width: 70%; } }
+
+@media screen and (min-width: 768px) {
+  .contenedor-45 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    padding: 40px; }
+    .contenedor-45 .incaa {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      padding: 30px;
+      width: 70%; } }

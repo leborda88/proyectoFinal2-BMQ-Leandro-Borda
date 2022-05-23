@@ -23,3 +23,11 @@
     "nodemon": "^2.0.15"
   }
 }
+/*  descripcion: la pagina esta pensada para un festival folklorico de caracter
+competitivo y festivalero,donde encontramos informacion sobre el festival 
+y tambien mas informacion sobre el ballet organizador con links a sus redes sociales
+donde se podra encontrar mas informacion al respecto.
+
+se utilizo las herramientas aprendidas en clase,para los lenguajes html y css.
+tambuien se utilizo como libreria bootstrap,ademas, herramientas instaladas nodemon y node-sass.
+GIT Y github para control de versiones y poder acceder desde la nube.*/
